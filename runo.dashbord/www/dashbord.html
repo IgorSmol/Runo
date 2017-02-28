@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>RUNO</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/chart.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+    
+    <header>
+        <div class="logo-burg-btn">
+            <a href="#"><img src="img/logo.png"></a>
+            <div class="burg-btn">
+                <div class="wrap">
+                    <span class="burg-btn-line line-1"></span>
+                    <span class="burg-btn-line line-2"></span>
+                    <span class="burg-btn-line line-3"></span>
+                </div>
+            </div>
+        </div>
+        <div class="head-right-side pull-right">
+            <ul class="head-list">
+                <li class="on-line"><span class="numbers">120</span> <span class="text">Users online</span></li>
+                <li class="real-time"><span class="numbers">12</span> <span class="text">Realtime Calls</span></li>
+                <li class="paid"><span class="numbers">6</span> <span class="text">Paid Calls</span></li>
+                <li class="free"><span class="numbers">8</span> <span class="text">Free Calls</span></li>
+            </ul>
+            <div class="pull-right">
+                <div class="mob-wrap">
+                    <span class="add-credit-btn modal-to-show" data-modal="#creditModal">Add credit</span>
+                    <span class="user-mony">0,0 EUR</span>
+                </div>
+                
+                <div class="user-data-wrap">
+                    <div class="user-img"><img src="img/user.png" alt=""></div>
+                    
+                    <div class="user-data">
+                        <div class="inner">
+                            <div class="clearfix">
+                                <div class="user-img-big"><img src="img/user.png" alt=""></div>
+                                <div class="desc">
+                                    <span class="name">Alex Lesli</span>
+                                    <span class="type-value">Super value</span>
+                                    <span class="phone">(+380) 0800 051213</span>
+                                    <ul class="devise-data">
+                                        <li>IPHONE 5s</li>
+                                        <li>10.1.1</li>
+                                    </ul>
+                                    <div class="btn-wrap clearfix">
+                                        <a href="#">Change Password</a>
+                                        <a href="#" class="pull-right">Sign out</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </header>
+    
+    <div class="side-menu-wrap">
+        <ul class="side-menu">
+            <li><a href="dashbord.html" class="active"><img src="img/home.png" alt=""><span>Home</span></a></li>
+            <li><a href="dashbord-u.html"><img src="img/users.png" alt=""><span>Users</span></a></li>
+            <li><a href="dashbord-f.html"><img src="img/credit.png" alt=""><span>Finance</span></a></li>
+        </ul>
+    </div>
+    
+    <div class="content">
+        <div class="content-item stats-wrap">
+            <div class="title"><span>Stats For The Period</span> <div class="datepicker-wrap"><input type="text" id="datepicker"></div></div>
+            <div class="row">
+               
+                <div class="col-lg-4 col-sm-6 col-xs-12">
+                    <div class="stat total-user">
+                        <div class="wrap">
+                            <span class="ttl">Total users</span>
+                            <span class="nums">2 643</span>
+                            <span class="stage stage-up">(+115) 4%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6 col-xs-12">
+                    <div class="stat active-user">
+                        <div class="wrap">
+                            <span class="ttl">Active users</span>
+                            <span class="nums">987</span>
+                            <span class="stage stage-up">(+15) 5%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6 col-xs-12">
+                    <div class="stat registr-user">
+                        <div class="wrap">
+                            <span class="ttl">User registration</span>
+                            <span class="nums">47</span>
+                            <span class="stage stage-down">(-3) 3%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6 col-xs-12">
+                    <div class="stat calls-user">
+                        <div class="wrap">
+                            <span class="ttl">Calls</span>
+                            <span class="nums">2 643</span>
+                            <span class="stage stage-up">(+115) 4%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6 col-xs-12">
+                    <div class="stat sales-user">
+                        <div class="wrap">
+                            <span class="ttl">Sales</span>
+                            <span class="nums">201</span>
+                            <span class="stage stage-up">(+7) 2%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-sm-6 col-xs-12">
+                    <div class="stat spends-user">
+                        <div class="wrap">
+                            <span class="ttl">Spendings</span>
+                            <span class="nums">36/563 min</span>
+                            <span class="stage stage-down">(-3) 3%</span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="content-item">
+            <div class="row">
+                <div class="col-lg-6 col-xs-12">
+                    <div class="title">Online users by platform</div>
+                    <div class="graf-wrap">
+                        <canvas id="canvas" height="400" width="650"></canvas>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xs-12">
+                    <div class="title">User Registartions</div>
+                    <div class="graf-wrap">
+                        <canvas id="canvas2" height="400" width="650"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="modal-overlay"></div>
+    <div id="creditModal" class="modal-wrap">
+        <div class="modal-body">
+            <div class="btn-close btn-close-modal"></div>
+            <span class="ttl">Select an amount of credit<br/>to add to User</span>
+            <div class="amon-item">
+                <p class="ttl">Top-up amount:</p>
+                <input type="text" id="amountCredit" class="inpt-style" placeholder="$">
+                <div class="mony-radio">
+                    <label class="mony-type dolar active"><input type="radio" value="$" name="amount-mony" checked></label>
+                    <label class="mony-type funt"><input type="radio" value="£" name="amount-mony"></label>
+                    <label class="mony-type euro"><input type="radio" value="€" name="amount-mony"></label>
+                </div>
+            </div>
+            <div class="phone-item">
+                <p class="ttl">Enter your phone number</p>
+                <input type="text" class="inpt-style" placeholder="Enter phone number including country code">
+            </div>
+            <a href="#" class="special-btns credit-btn"><span>Add credit</span></a>
+        </div>
+    </div>
+    
+</body>
+</html>
